@@ -1,7 +1,9 @@
-# vel_publisher
-# Autor: fsotosan
-# Programa para publicar mensajes Twist en el topic ROS 'cmd_ref_vel' usando las teclas de flecha, la 'x' y la 'y'
-# La lectura de teclado usando termios se ha extraido de turtlebot_teleop http://github.com/turtlebot/turtlebot_apps.git
+/*
+ vel_publisher
+ Autor: fsotosan
+ Programa para publicar mensajes Twist en el topic ROS 'cmd_ref_vel' usando las teclas de flecha, la 'x' y la 'y'
+ La lectura de teclado usando termios se ha extraido de turtlebot_teleop http://github.com/turtlebot/turtlebot_apps.git
+*/
 
 #include "ros/ros.h"
 #include "geometry_msgs/Twist.h"
