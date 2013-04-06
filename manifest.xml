@@ -1,0 +1,19 @@
+<package>
+  <description brief="taller_youbot">
+
+     taller_youbot
+
+  </description>
+  <author>youbot</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/taller_youbot</url>
+  <depend package="rospy"/>
+  <depend package="roscpp"/>
+  <depend package="std_msgs"/>
+  <depend package="geometry_msgs"/>
+  <depend package="youbot_driver"/>
+
+</package>
+
+
