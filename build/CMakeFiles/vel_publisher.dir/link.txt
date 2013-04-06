@@ -1,1 +1,0 @@
-/usr/bin/c++   -O2 -g     -pthread CMakeFiles/vel_publisher.dir/src/vel_publisher.o  -o ../bin/vel_publisher -rdynamic -L/opt/ros/fuerte/lib -L/home/youbot/ros_stacks/youbot_driver/lib -lroscpp -lrostime -lrosconsole -lroscpp_serialization -lxmlrpcpp -lYouBotDriver -lsoem -Wl,-rpath,/opt/ros/fuerte/lib:/home/youbot/ros_stacks/youbot_driver/lib 
