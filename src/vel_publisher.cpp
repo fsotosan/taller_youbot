@@ -1,3 +1,8 @@
+# vel_publisher
+# Autor: fsotosan
+# Programa para publicar mensajes Twist en el topic ROS 'cmd_ref_vel' usando las teclas de flecha, la 'x' y la 'y'
+# La lectura de teclado usando termios se ha extraido de turtlebot_teleop http://github.com/turtlebot/turtlebot_apps.git
+
 #include "ros/ros.h"
 #include "geometry_msgs/Twist.h"
 #include <iostream>
@@ -8,6 +13,7 @@
 const double LINEAR_VEL = 0.1; // metros por segundo
 const double PI = 3.1415926;
 const double ANGULAR_VEL = PI/8; // radianes por segundo
+
 
 #define KEYCODE_R 0x43 
 #define KEYCODE_L 0x44
