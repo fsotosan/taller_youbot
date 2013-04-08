@@ -44,7 +44,9 @@ int main(int argc, char **argv) {
   while(ros::ok()) {
     if(getVelInput(&theVel)) {
     	thePublisher.publish(theVel);
-    	thePublisher.publish(geometry_msgs::Twist());
+    	// [Fernando 20130408] No publicar mensaje de parada inmediatamente
+    	// ya que se ha comprobado que el youbot no llega a moverse
+    	//thePublisher.publish(geometry_msgs::Twist());
     }
     theLoopRate.sleep();
   }
@@ -89,6 +91,9 @@ int getVelInput(geometry_msgs::Twist *outVel) {
 			break;
 		case 'x':
 			outVel->angular.z = -ANGULAR_VEL;
+			break;
+		case 's':
+			// [Fernando 20130408] Al pulsar una 's' se envia un mesaje de parada
 			break;
 		default:
 			return 0;
