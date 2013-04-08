@@ -34,7 +34,7 @@ INCLUDE_DIRECTORIES(
 	${Boost_INCLUDE_DIR}
 )
 
-rosbuild_add_executable(bin/vel_publisher src/vel_publisher.cpp)
-rosbuild_add_executable(bin/youbot_base_move src/youbot_base_move.cpp)
+rosbuild_add_executable(vel_publisher src/vel_publisher.cpp)
+rosbuild_add_executable(youbot_base_move src/youbot_base_move.cpp)
 
 
